@@ -1,0 +1,189 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1f2937;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .image {
+    width: 900px;
+    height: 400px;
+    background-color: pink;
+    background-image: url(images/placeholder-2.webp);
+    background-size: 100% 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    column-gap: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-container {
+    background-color: #1f2937;
+    color: white;
+    padding-bottom: 3em;
+}
+
+.header-logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-main button {
+    padding: 0.5em 1.5em;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    border: 0;
+}
+
+.header-main button:hover {
+    background-color: white;
+    color: #1f2937;
+}
+
+.services-section {
+    margin-bottom: 46px;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.card {
+    width: 250px;
+    border-radius: 1em;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.card .description {
+    padding: 0 1em;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.testimonial-section {
+    background-color: #e5e7eb;
+    padding: 4em 0;
+    margin-bottom: 46px;
+}
+
+.quote-article {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.quote-article .quote {
+    font-size: 2em;
+    overflow-wrap: break-word;
+    font-style: italic;
+    
+}
+
+.quote-article .by {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.contact-section {
+    height: 200px;
+    background-color: #3882f6;
+    width: 60%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 1em;
+    margin-bottom: 42px;
+}
+
+.contact-section .description p{
+    margin: 0;
+}
+
+.contact-section .description h2 {
+    margin: 0 0 0.7em 0;
+}
+
+.contact-section button {
+    padding: 0.5em 1.5em;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    border: 1px solid white;
+    font-size: 1.2em;
+}
+
+.contact-section button:hover {
+    background-color: white;
+    color: #1f2937;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1.2em;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
