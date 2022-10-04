@@ -5,9 +5,12 @@ const options = ["rock", "paper", "scissor"];
 let playerScore = 0;
 let computerScore = 0;
 let round = 5;
+let currRound = 1;
 
 const playerScoreEll = document.querySelector("#player p:last-child");
 const compScoreEll = document.querySelector("#computer p:last-child");
+const roundEll = document.querySelector("#round");
+const winnerEll = document.querySelector("#winner");
 
 function isOptionWinAgainst(option1 = "", option2 = "") {
     if (option1.length === 0 || option2.length === 0) {
@@ -84,6 +87,28 @@ function updateScore() {
     compScoreEll.textContent = computerScore;
 }
 
+function updateRound() {
+    if(currRound >= round) {
+        let whoTheWinner = "";
+
+        if(playerScore > computerScore) {
+            whoTheWinner = "PLAYER";
+        }else {
+            whoTheWinner = "COMPUTER"
+        }
+
+        if(whoTheWinner.length === 0) {
+            winnerEll.textContent = "DRAW";
+        }else {
+            winnerEll.textContent = `${whoTheWinner} WIN`;
+        }
+    }else {
+        currRound++;
+        roundEll.textContent = currRound;
+    }
+
+}
+
 function game(option = "") {
     let compOption = getComputerDecision();
     if (isOptionWinAgainst(option, compOption)) {
@@ -92,6 +117,7 @@ function game(option = "") {
         computerScore++;
     }
     updateScore();
+    updateRound();
 }
 
 

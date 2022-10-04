@@ -203,6 +203,7 @@ main {
 .option {
     display: flex;
     gap: 1em;
+    margin-bottom: 1em;
 }
 
 .opt-item {
@@ -222,4 +223,15 @@ main {
 
 .opt-item:active {
     transform: scale(1);
+}
+
+.round-board {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#winner {
+    font-weight: bold;
+    font-size: 1.5em;
 }
